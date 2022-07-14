@@ -519,7 +519,7 @@ body::-webkit-scrollbar-thumb{
     justify-content: space-evenly;
     align-items: flex-start;
     flex-wrap: wrap;
-    position: relative;
+    margin-bottom: 3rem;
 }
 
 .details{
@@ -609,4 +609,16 @@ body::-webkit-scrollbar-thumb{
 .email-btn:hover{
     background-color: var(--header-color);
     color: var(--sectionbg-color);
+}
+
+/* ===============footer section=============== */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--header-color);
+    padding: 3rem;
 }
