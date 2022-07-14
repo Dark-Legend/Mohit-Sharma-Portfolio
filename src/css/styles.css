@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 :root{
     --header-color: #495C83;
     --sectionbg-color: #FAFAFF;
@@ -17,10 +21,10 @@
     --para-fontsize: .938rem;
 }
 
-html,body{
+
+body{
     box-sizing: border-box;
     overflow-x: hidden;
-    scroll-behavior: smooth;
 }
 
 body::-webkit-scrollbar{
@@ -43,6 +47,7 @@ body::-webkit-scrollbar-thumb{
     flex-direction: column;
     background-color: var(--header-color);
     padding: 2rem 10rem 0 10rem;
+    /* height: 100vh; */
 }
 
 .header{
@@ -700,6 +705,10 @@ body::-webkit-scrollbar-thumb{
 .explore-list ul li a{
     color: var(--text-color);
     text-decoration: none;
+}
+
+.explore-list ul li a:hover{
+    color: var(--header-color);
 }
 
 .social{

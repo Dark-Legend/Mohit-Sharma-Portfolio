@@ -8,12 +8,14 @@
     <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="src/css/swiper-bundle.min.css">
-    <link defer rel="stylesheet" href="src/js/script.js">
+    <!-- <link defer rel="stylesheet" href="src/js/script.js"> -->
+    
+    <!-- <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script> -->
 
     <title>Mohit Sharma</title>
   </head>
   <body>
-    <div class="head">
+    <div class="head" id="home-section">
       <header class="header">
         <nav class="navbar">
           <div class="logo">
@@ -22,11 +24,11 @@
           <div class="list">
             <ul>
               <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Skills</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Blogs</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#about-section">About</a></li>
+              <li><a href="#skill-section">Skills</a></li>
+              <li><a href="#project-section">Projects</a></li>
+              <li><a href="#blog-section">Blogs</a></li>
+              <li><a href="#contact-section">Contact</a></li>
             </ul>
           </div>
         </nav>
@@ -39,7 +41,7 @@
               </h1>
             </div>
             <div class="arrow">
-              <a href="#" class="arrow-icon"><i class='bx bx-left-arrow-alt arr' ></i>Scroll Down</a>
+              <a href="#about-section" class="arrow-icon"><i class='bx bx-left-arrow-alt arr' ></i>Scroll Down</a>
             </div>
           </div>
           <div class="header-img">
@@ -51,7 +53,7 @@
 
     <!-- ======================about section======================= -->
 
-    <section class="about">
+    <section class="about" id="about-section">
       <div class="about-heading">
         <h1>About</h1>
       </div>
@@ -91,7 +93,7 @@
   
     <!-- ===================skill section================== -->
 
-    <section class="skills">
+    <section class="skills" id="skill-section">
       <div class="skill-heading">
         <h1 class="skill under">Skills</h1>
       </div>
@@ -107,7 +109,7 @@
     </section>
 
     <!-- ================project section============= -->
-<section class="project">
+<section class="project" id="project-section">
   <div class="project-para">
     <h1 class="project-text">Projects</h1>
   </div>
@@ -117,16 +119,24 @@
         <img src="src/img/bankistcomplete.png" alt="bankist" class="bankist-img">
         <h1 class="title">Bankist App</h1>
         <div class="btn">
-          <a href="#" class="live-demo">Live Demo</a>
-          <a href="#" class="source-code">Source Code</a>
+          <a target="_blank"  href="https://bankista.netlify.app/" class="live-demo">Live Demo</a>
+          <a target="_blank" href="#" class="source-code">Source Code</a>
         </div>
       </div>
       <div class="guessmynum pro">
         <img src="src/img/guessmynum.jpeg" alt="bankist" class="bankist-img">
         <h1 class="title">Guess My Number</h1>
         <div class="btn">
-          <a href="#" class="live-demo">Live Demo</a>
-          <a href="#" class="source-code">Source Code</a>
+          <a target="_blank" href="https://guessmy-num.netlify.app/" class="live-demo">Live Demo</a>
+          <a target="_blank" href="#" class="source-code">Source Code</a>
+        </div>
+      </div>
+      <div class="twitter pro">
+        <img src="src/img/twitter.png" alt="bankist" class="bankist-img">
+        <h1 class="title">Guess My Number</h1>
+        <div class="btn">
+          <a target="_blank" href="https://twitter-log.netlify.app/" class="live-demo">Live Demo</a>
+          <a target="_blank" href="#" class="source-code">Source Code</a>
         </div>
       </div>
     </div>
@@ -136,15 +146,22 @@
         <img src="src/img/seasonsup.jpeg" alt="bankist" class="bankist-img">
         <h1 class="title">SeasonsUP</h1>
         <div class="btn">
-          <a href="#" class="live-demo">Live Demo</a>
-          <a href="#" class="source-code">Source Code</a>
+          <a target="_blank" href="https://seasonsup.netlify.app/" class="live-demo">Live Demo</a>
+          <a target="_blank" href="#" class="source-code">Source Code</a>
       </div>
       <div class="mapty pro">
         <img src="src/img/mapty.png" alt="bankist" class="mapty-img">
         <h1 class="title">Mapty</h1>
         <div class="btn">
-          <a href="#" class="live-demo">Live Demo</a>
-          <a href="#" class="source-code">Source Code</a>
+          <a target="_blank" href="https://maptyfy.netlify.app/" class="live-demo">Live Demo</a>
+          <a target="_blank" href="#" class="source-code">Source Code</a>
+      </div>
+      <div class="bankistwebsite pro">
+        <img src="src/img/bankistwebsite.png" alt="bankist" class="bankist-img">
+        <h1 class="title">Bankist Website</h1>
+        <div class="btn">
+          <a target="_blank" href="https://bankista.netlify.app/" class="live-demo">Live Demo</a>
+          <a target="_blank" href="#" class="source-code">Source Code</a>
       </div>
     </div>
     </div>
@@ -152,7 +169,7 @@
 </section>
     
   <!-- ==========================Blogs Section==================0 -->
-  <section class="blog">
+  <section class="blog" id="blog-section">
     <h1 class="blog-text">Blogs</h1>
     <div class="blog-section">
       <div class="blog1 blogging">
@@ -173,7 +190,7 @@
   </section>
     
   <!-- =================================contact section================= -->
-  <section class="contact">
+  <section class="contact" id="contact-section">
     <h1 class="contact-text">Contact</h1>
     <div class="form">
       <div class="details">
@@ -205,12 +222,12 @@
       <h1 class="explore-title">EXPLORE</h1>
       <div class="explore-list">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#home-section">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#skill-section">Skills</a></li>
+          <li><a href="#project-section">Projects</a></li>
+          <li><a href="#blog-section">Blogs</a></li>
+          <li><a href="#contact-section">Contact</a></li>
         </ul>
       </div>
     </div>
@@ -224,5 +241,8 @@
       </div>
     </div>
   </footer>
+
+  <!-- ===================scroll reveal js=================== -->
+  <script src="https://unpkg.com/scrollreveal"></script>
   </body>
 </html>
