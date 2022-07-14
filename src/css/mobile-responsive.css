@@ -68,11 +68,7 @@ body::-webkit-scrollbar-thumb {
     backdrop-filter: blur(100%);
     width: 100%;
   }
-  /* .navbar{
-    position: fixed;
-    top: 10px;
-    left: 0;
-  } */
+
   .navbar .list ul{
     display: flex;
     justify-content: center;
