@@ -28,7 +28,7 @@
           <div class="logo">
             <p>Mohit Sharma</p>
           </div>
-          <div class="list">
+          <div class="list" id="list-menu">
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#about-section">About</a></li>
@@ -38,7 +38,7 @@
               <li><a href="#contact-section">Contact</a></li>
             </ul>
           </div>
-          <div class="menu">
+          <div class="menu" id="nav-toggle">
             <a href="#" class="menu"><i class='bx bx-menu'></i></a>
           </div>
         </nav>
@@ -213,13 +213,22 @@
       </div>
       <div class="contact-form">
         <div class="input">
-          <input type="text" placeholder="Name" class="name input-text">
-          <input type="text" placeholder="Email" class="email input-text">
-        </div>
-        <textarea class="message" placeholder="Message" name="message" id="" cols="30" rows="10"></textarea>
-        <div class="button">
-          <a href="#" class="email-btn">Submit</a>
-        </div>
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <div class="input-area">
+              <input type="hidden" name="access_key" value="efd04947-5a68-4e1c-92a4-7ce168445ae4">
+              <input placeholder="Name" type="text" name="name" required class="name input-text">
+              <input placeholder="Email" type="email" name="email" required class="email input-text">
+              <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            </div>
+            <div class="text-area">
+              <textarea class="message" placeholder="Message" name="message" required></textarea>
+            </div>
+            
+            <div class="button">
+              <button type="submit" class="email-btn">Submit Form</button>
+            </div>
+          </form>   
+        </div>  
       </div>
     </div>
   </section>

@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
   background-color: var(--black-color);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   /* ==================home section=================== */
   .head {
     display: flex;
@@ -51,8 +51,32 @@ body::-webkit-scrollbar-thumb {
     padding: 1rem 1rem 0 1rem;
   }
 
+
+  .list{
+    position: fixed;
+    z-index: 2;
+    top: 1px;
+    right: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.7);
+    height: 100%;
+    transition: .5s;
+    backdrop-filter: blur(100%);
+    width: 100%;
+  }
+
   .navbar .list ul {
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .navbar .list ul li a{
+    color: var(--black-color);
   }
 
   .navbar .logo p {
@@ -62,9 +86,14 @@ body::-webkit-scrollbar-thumb {
 
   .menu {
     display: block;
+    z-index: 2;
     color: var(--sectionbg-color);
-    font-size: 20px;
+    font-size: 1.5rem;
     cursor: pointer;
+  }
+
+  .show{
+    right: 0;
   }
 
   .container .header-text .text {
@@ -102,7 +131,6 @@ body::-webkit-scrollbar-thumb {
   .about-container {
     /* padding: 1rem 4rem 0 4rem; */
     width: 100%;
-    border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -195,8 +223,8 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 2rem;
-    padding: 0;
+    gap: 3rem;
+    padding: 1rem;
     margin-bottom: 6rem;
   }
 
@@ -218,7 +246,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .portfolios img {
-    width: 250px;
+    width: 70vw;
     border-radius: 10px;
   }
 
@@ -252,10 +280,11 @@ body::-webkit-scrollbar-thumb {
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
-    padding: 2rem;
+    padding: 1rem;
   }
 
   .blogging {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -269,8 +298,14 @@ body::-webkit-scrollbar-thumb {
     gap: 2rem;
   }
 
+  .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .blog-section img {
-    width: 200px;
+    width: 70vw;
     height: 200px;
   }
 
@@ -308,7 +343,7 @@ body::-webkit-scrollbar-thumb {
     flex-wrap: wrap;
     gap: 2rem;
   }
-  .input {
+  .input form {
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -317,13 +352,17 @@ body::-webkit-scrollbar-thumb {
     gap: 2rem;
   }
 
-  .input-text {
-    width: 120px;
+  .input form .input-area input{
+    width: 40vw;
     height: 40px;
     padding: 0.8rem;
     border: 2px solid var(--black-color);
     border-radius: 5px;
     box-sizing: border-box;
+  }
+
+  .text-area{
+    width: 100%;
   }
 
   .input-text::placeholder,
@@ -338,4 +377,42 @@ body::-webkit-scrollbar-thumb {
     border-radius: 5px;
     padding: 0.8rem;
   }
+
+  /* ============footer section================== */
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: var(--black-color);
+    padding: 2rem;
+    font-family: var(--font-family);
+    gap: 2rem;
+}
+
+.aboutme-text{
+    font-size: 20px;
+}
+
+.aboutme-para p{
+    font-size: 15px;
+}
+
+.explore-title{
+    font-size: 20px;
+}
+
+.explore-list ul li a{
+    font-size: 15px;
+}
+
+.social-title{
+    font-size: 20px;
+
+}
+
+.social-icons a{
+    font-size: 15px;
+}
 }

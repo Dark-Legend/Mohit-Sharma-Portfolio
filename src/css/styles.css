@@ -323,6 +323,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 
+
 .skill{
     color: var(--sectionbg-color);
     position: relative;
@@ -610,7 +611,16 @@ body::-webkit-scrollbar-thumb{
     gap: 2rem;
 }
 
-.input{
+.input form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.input-area{
     display: flex;
     justify-content: center;
     align-items: center;
