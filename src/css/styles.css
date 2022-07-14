@@ -322,6 +322,7 @@ body::-webkit-scrollbar-thumb{
     width: 10%;
 }
 
+
 .skill{
     color: var(--sectionbg-color);
     position: relative;
