@@ -123,13 +123,41 @@ body::-webkit-scrollbar-thumb{
 .container .header-text .text{
     font-size: var(--header-big-font);
 }
-.container .header-text .arrow .arrow-icon{
-    filter: invert();
-    cursor: pointer;
+
+.arrow{
+    margin: 4rem 0 4rem 0;
+    color: var(--sectionbg-color);
+    transform: rotate(-90deg);
 }
 
+.arrow a{
+    color: white;
+    text-decoration: none;
+    transform: rotate(-450deg);
+}
+
+.scroll-text{
+    color: var(--sectionbg-color);
+}
 .container .header-img img{
-    width:650px;
+    width:600px;
+    position: absolute;
+    top: -180px;
+    bottom: 100px;
+    right: -120px
+
+}
+
+.header-img{
+    /* border: 2px solid red; */
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: var(--sectionbg-color);
+    position: relative;
+    overflow: hidden;
+    margin-right: 9rem;
+    margin-top: 50px;
 }
 
 /* ==============about section================ */
@@ -182,11 +210,15 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--header-color);
     border-radius: 50%;
     overflow: hidden;
+    position: relative;
 }
 
 .circle-img{
-    width: 200px;
-    height: 200px;
+    position: absolute;
+    top: -200px;
+    left: -110px;
+    width: 400px;
+    height: 400px;
 }
 .about-text{
     width: 100%;
@@ -651,7 +683,7 @@ body::-webkit-scrollbar-thumb{
     gap: 2rem;
 }
 
-.list ul{
+.explore-list ul{
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -665,7 +697,7 @@ body::-webkit-scrollbar-thumb{
     color: var(--sectionbg-color);
 }
 
-.list ul li a{
+.explore-list ul li a{
     color: var(--text-color);
     text-decoration: none;
 }
@@ -681,4 +713,21 @@ body::-webkit-scrollbar-thumb{
 
 .social-title{
     color: var(--sectionbg-color);
+}
+
+.social-icons{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.social-icons a{
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.social-icons a:hover{
+    color: var(--header-color);
 }
