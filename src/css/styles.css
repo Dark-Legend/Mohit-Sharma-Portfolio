@@ -481,4 +481,33 @@ body::-webkit-scrollbar-thumb{
 
 .blogging .btn .blog-btn:hover{
     background-color: #121d25;
+    border: 1px solid var(--sectionbg-color);
+}
+
+/* ===============contact section================== */
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--sectionbg-color);
+    font-family: var(--font-family);
+}
+
+.contact-text{
+    color: var(--black-color);
+    margin: 3rem;
+    position: relative;
+}
+
+.contact-text::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 12%;
+    top: 35px;
+    width: 80%;
+    background-color: var(--header-color);
+    border-bottom: 3px solid var(--header-color);
+    border-radius: 50px;
 }
