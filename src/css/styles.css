@@ -630,7 +630,7 @@ body::-webkit-scrollbar-thumb{
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .aboutme-text{
@@ -642,3 +642,43 @@ body::-webkit-scrollbar-thumb{
     font-weight: 600;
 }
 
+.explore{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.list ul{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style-type: none;
+}
+
+.explore-title{
+    color: var(--sectionbg-color);
+}
+
+.list ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.social-title{
+    color: var(--sectionbg-color);
+}
