@@ -14,7 +14,7 @@ sr.reveal('.logo');
 sr.reveal('.list');
 sr.reveal('.heading-text', {});
 sr.reveal('.arrow', {delay: 200});
-sr.reveal('.header-img', {origin: 'right',delay: 400});
+sr.reveal('.header-img', {origin: 'right',delay: 300});
 
 sr.reveal('.menu',{
   origin: 'right'
@@ -28,17 +28,17 @@ sr.reveal('.aboutme-para', {
 
 
 // ============scroll about=======================
-sr.reveal('.about-heading', {delay: 500});
-sr.reveal('.circle', {delay: 500});
+sr.reveal('.about-heading', {delay: 200});
+sr.reveal('.circle', {delay: 200});
 sr.reveal('.intro-text', {delay: 300});
 sr.reveal('.desigination', {delay: 400});
-sr.reveal('.paragraph', {delay: 500});
+sr.reveal('.paragraph', {delay: 400});
 sr.reveal('.links-icon', {
-  delay: 600,
-  interval: 200
+  delay: 500,
+  interval: 100
 });
 sr.reveal('.download-btn',{
-  delay: 650,
+  delay: 500,
   interval: 250
 });
 
@@ -54,19 +54,19 @@ sr.reveal('.skill-icons', {
 // =============scroll projects==================
 
 sr.reveal('.project-text');
-sr.reveal('.bb', {interval: 200});
+sr.reveal('.bb', {interval: 100});
 sr.reveal('.pro');
 
 // =============scroll blog============
 sr.reveal('.blog-text');
 sr.reveal('.blog1',{
   origin: 'left',
-  delay: 200
+  delay: 100
 });
 
 sr.reveal('.blog2',{
   origin: 'right',
-  delay: 200
+  delay: 100
 });
 
 // ===========scroll contact=================
@@ -82,14 +82,14 @@ sr.reveal('.contact-form',{
   delay:200
 });
 
-sr.reveal('.name', {delay:300,origin: 'right'});
-sr.reveal('.email', {delay: 400, origin: 'right'});
+sr.reveal('.name', {delay:100,origin: 'right'});
+sr.reveal('.email', {delay: 200, origin: 'right'});
 sr.reveal('.message',{
-  delay: 500,
+  delay: 200,
   origin: 'right'
 });
 sr.reveal('.button',{
-  delay: 450,
+  delay: 250,
   origin: 'right'
 });
 
